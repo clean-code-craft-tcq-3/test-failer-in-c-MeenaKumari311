@@ -1,1 +1,4 @@
-int networkAlertStub(float celcius);
+#ifndef __NETWORKALERTSTUB_H_
+#define __NETWORKALERTSTUB_H_
+int networkAlertStub(float celcius)
+#endif
