@@ -2,9 +2,9 @@
 #include <assert.h>
 #include "AlertStub.h"
 int alertFailureCount = 0;
-
+extern float celcius;
 void alertInCelcius(float farenheit) {
-    extern float celcius = (farenheit - 32) * 5 / 9;
+    float celcius = (farenheit - 32) * 5 / 9;
     int returnCode = networkAlertStub(celcius);
    
     if (returnCode != 200) {
