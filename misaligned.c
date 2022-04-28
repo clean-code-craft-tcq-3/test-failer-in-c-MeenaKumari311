@@ -8,7 +8,7 @@ int printColorMap() {
     for(i = 0; i < 5; i++) {
         for(j = 0; j < 5; j++) {
             printf("%d | %s | %s\n", i * 5 + j, majorColor[i], minorColor[i]);
-            assert(minorColor[0]=="Blue");
+            assert(strcmp(minorColor[0],"Blue")==0);
         }
     }
     return i * j;
