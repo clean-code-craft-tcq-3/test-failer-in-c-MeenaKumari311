@@ -10,7 +10,7 @@ int printColorMap() {
             printf("%d | %s | %s\n", i * 5 + j, majorColor[i], minorColor[i]);
             pairNo++;
             assert((i * 5 + j)==pairNo);
-             
+        }       
     }
     return i * j;
 }
